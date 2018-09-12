@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>
+    <h2>Collapse - Basic</h2>
+  </legend>
+  <div>
+
+    <button type="button" class="btn btn-primary" (click)="isCollapsed=!isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBaic">
+      Toggle collapse
+    </button>
+    <hr/>
+    <div id="collapseBasic" [collapse]="isCollapsed" class="card card-block card-header">
+      <div class="well well-lg">Some content</div>
+    </div>
+  </div>
+</fieldset>
